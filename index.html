@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>teste Javascript</title>
+
+    <script type="text/javascript">
+      var numeros = [];
+
+      numeros[0] = prompt("Digite um número inteiro e positivo:");
+      while ((numeros[0] <= 0) || (numeros[0] % 1 != 0)) {
+        numeros[0] = prompt("O número digitado não é inteiro e/ou positivo. Digite um número inteiro e positivo:");
+      }
+
+      numeros[1] = prompt("Agora digite mais um número inteiro e positivo:");
+      while ((numeros[1] <= 0) || (numeros[1] % 1 != 0)) {
+        numeros[1] = prompt("O número digitado não é inteiro e/ou positivo. Digite um número inteiro e positivo:");
+      }
+
+    alert("O resultado da divisão dos dois números é: " + (numeros[0] / numeros[1]));
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
